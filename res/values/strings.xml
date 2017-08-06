@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Route2Activity!</string>
+    <string name="app_name">My City</string>
+    <string name="build_button_description">This is a button for toggling build mode on/off</string>
+    <string name="home_button_description">This is a button for focusing the view on the current location of the device</string>
+    <string name="label_notifications">Notifications</string>
+    <string name="label_tryApp">Try the app without creating an account</string>
+    <string name="label_createAccount">Create account in less than 30 seconds</string>
+    <string name="label_logIn">Log in with your existing account</string>
+    <string name="label_debug">Enter debug mode</string>
+    <string name="label_help">About MyCity</string>
+    <string name="label_use_card">Use Card</string>
+
+</resources>

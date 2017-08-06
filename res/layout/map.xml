@@ -1,0 +1,56 @@
+<merge
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<com.google.android.maps.MapView
+    android:id="@+id/mapview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    style="@style/mapViewStyle"
+    android:apiKey="0wI_GxDZxc_e6bEiKaXik2N_SouVmFq0AN020JQ" />
+
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton
+        android:contentDescription="Exit to main menu"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map_exit"
+        android:id="@+id/map_button_exit">
+    </ImageButton>
+    <ImageButton
+        android:contentDescription="Show Profile"
+        android:layout_toLeftOf="@+id/map_button_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map_show_profile"
+        android:id="@+id/map_button_show_profile">
+    </ImageButton>
+    <ImageButton
+        android:contentDescription="@string/build_button_description"
+        android:layout_toLeftOf="@+id/map_button_show_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map_build_house"
+        android:id="@+id/map_button_build_house">
+    </ImageButton>
+    <ImageButton
+        android:contentDescription="@string/home_button_description"
+        android:layout_toLeftOf="@+id/map_button_build_house"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map_current_location"
+        android:id="@+id/map_button_current_location">
+    </ImageButton>
+</RelativeLayout>
+</merge>

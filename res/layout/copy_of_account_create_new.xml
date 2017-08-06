@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/createNewAccount_textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="E-mail" />
+
+    <EditText
+        android:id="@+id/createNewAccount_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createNewAccount_textView_email"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/createNewAccount_textView_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createNewAccount_email"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/createNewAccount_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createNewAccount_textView_password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/createNewAccount_textView_displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createNewAccount_password"
+        android:text="Display name" />
+
+    <EditText
+        android:id="@+id/createNewAccount_displayName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createNewAccount_textView_displayName"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/createNewAccount_textView_currentToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createNewAccount_displayName"
+        android:layout_centerHorizontal="true"
+        android:text="Current token" />
+
+    <ImageView
+        android:id="@+id/createNewAccount_currentToken"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/createNewAccount_textView_currentToken"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@drawable/token_default" />
+
+    <Button
+        android:id="@+id/createNewAccount_button_rightArrow_token"
+        style="@style/arrow"
+        android:layout_alignTop="@+id/createNewAccount_currentToken"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/createNewAccount_currentToken"
+        android:background="@drawable/border_light"
+        android:text="→" />
+
+    <Button
+        android:id="@+id/createNewAccount_button_leftArrow_token"
+        style="@style/arrow"
+        android:layout_alignTop="@+id/createNewAccount_currentToken"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@+id/createNewAccount_currentToken"
+        android:background="@drawable/border_light"
+        android:text="←" />
+
+    <TextView
+        android:id="@+id/createNewAccount_textView_chooseHouseType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createNewAccount_currentToken"
+        android:layout_centerHorizontal="true"
+        android:text="Choose house type" />
+
+    <ImageView
+        android:id="@+id/createNewAccount_houseType"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_below="@+id/createNewAccount_textView_chooseHouseType"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@drawable/house_default" />
+
+    <Button
+        android:id="@+id/createNewAccount_button_rightArrow_house"
+        style="@style/arrow"
+        android:layout_alignTop="@+id/createNewAccount_houseType"
+        android:layout_marginTop="50dp"
+        android:layout_alignRight="@+id/createNewAccount_button_rightArrow_token"
+        android:background="@drawable/border_light"
+        android:text="→" />
+
+    <Button
+        android:id="@+id/createNewAccount_button_leftArrow_house"
+        style="@style/arrow"
+        android:layout_alignTop="@+id/createNewAccount_houseType"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/createNewAccount_button_leftArrow_token"
+        android:background="@drawable/border_light"
+        android:text="←" />
+
+    <Button
+        android:id="@+id/createNewAccount_createAccount"
+        style="@style/button"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/createNewAccount_houseType"
+        android:background="@drawable/border_light"
+        android:text="Create Account" />
+
+    <Button
+        android:id="@+id/createNewAccount_cancel"
+        style="@style/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/createNewAccount_createAccount"
+        android:background="@drawable/border_light"
+        android:text="Cancel" />
+
+</RelativeLayout>

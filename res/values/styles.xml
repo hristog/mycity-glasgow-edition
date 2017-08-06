@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="mapViewStyle">
+	    <item name="android:gravity">center</item>
+	</style>
+	
+	<style name="text">
+	    <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+	    <item name="android:typeface">sans</item>
+	</style>
+	
+	<style name="heading">
+	    <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+	    <item name="android:typeface">sans</item>
+	    <item name="android:textSize">20dp</item>
+	    <item name="android:textStyle">bold</item>
+	</style>
+	
+	<style name="button">
+	    <item name="android:textColor">#fff</item>
+	    <item name="android:typeface">monospace</item>
+	    <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+	</style>
+	
+	<style name="arrow">
+	    <item name="android:textColor">#fff</item>
+	    <item name="android:typeface">monospace</item>
+	    <item name="android:textSize">24dp</item>
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	</style>
+</resources>

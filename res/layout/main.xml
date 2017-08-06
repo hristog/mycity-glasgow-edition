@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/mainMenu_userName"
+            style="@style/heading"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="UserName" />
+        
+        <Button
+	        android:id="@+id/menu_button_helpAbout"
+	        style="@style/button"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:background="@drawable/border_light"
+	        android:text="@string/label_help" />
+        
+        <Button
+	        android:id="@+id/menu_button_logOut"
+	        style="@style/button"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:background="@drawable/border_light"
+	        android:text="Log Out" />
+        
+        <TextView
+            android:id="@+id/mainMenu_line"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+            android:background="@drawable/line"
+            android:layout_below="@+id/mainMenu_userName"
+            android:text="" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/main_gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp"
+        android:columnWidth="128dp"
+        android:gravity="center"
+        android:horizontalSpacing="20dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20dp" />
+</merge>

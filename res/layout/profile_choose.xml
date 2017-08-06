@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView_currentChoice"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/token_default" />
+
+    <Button
+        android:id="@+id/button_rightArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView_currentChoice"
+        android:layout_centerVertical="true"
+        android:text="R" />
+
+    <Button
+        android:id="@+id/button_leftArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imageView_currentChoice"
+        android:text="L" />
+    
+    <Button
+        android:id="@+id/button_confirmTokenSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/imageView_currentChoice"
+        android:text="Confirm" />
+	
+	<Button
+        android:id="@+id/button_cancelTokenSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/button_confirmTokenSelection"
+        android:text="Back" />
+    
+</RelativeLayout>

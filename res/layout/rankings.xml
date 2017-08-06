@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/rankings_userName"
+        style="@style/text"
+        android:layout_alignParentLeft="true" />
+    
+    <TextView
+        android:id="@+id/rankings_overallScore"
+        style="@style/text"
+        android:layout_alignTop="@+id/rankings_userName"
+        android:layout_alignParentRight="true" />
+    
+    <TextView
+        android:id="@+id/rankings_numCastles"
+        style="@style/text"
+        android:layout_alignTop="@+id/rankings_userName"
+        android:layout_toLeftOf="@+id/rankings_overallScore" />
+    
+    <TextView
+        android:id="@+id/rankings_numProperties"
+        style="@style/text"
+        android:layout_alignTop="@+id/rankings_userName"
+        android:layout_toLeftOf="@+id/rankings_numProperties"  />
+
+</RelativeLayout>
